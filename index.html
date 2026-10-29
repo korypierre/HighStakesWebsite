@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beyonce</title>
+<meta name="description" content="BCGK High Stakes Deals is a real estate mastermind and coaching program built for real estate professionals who are growing and scaling their real estate business past 50 doors. Apply to the Inner Circle." />
+<link rel="canonical" href="https://highstakesdeals.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BCGK High Stakes Deals" />
+<meta property="og:title" content="Beyonce" />
+<meta property="og:description" content="A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors. Apply to the Inner Circle." />
+<meta property="og:url" content="https://highstakesdeals.com/" />
+<meta property="og:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="BCGK High Stakes Deals — Step Into The Inner Circle" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Beyonce" />
+<meta name="twitter:description" content="A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors. Apply to the Inner Circle." />
+<meta name="twitter:image" content="https://highstakesdeals.com/assets/img/og-share-image.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BCGK High Stakes Deals",
+  "alternateName": "BCGK",
+  "url": "https://highstakesdeals.com/",
+  "logo": "https://highstakesdeals.com/assets/img/bcgk-logo.png",
+  "description": "BCGK High Stakes Deals is a real estate mastermind and coaching program helping real estate professionals grow and scale their multifamily real estate business.",
+  "foundingDate": "2020",
+  "sameAs": [
+    "https://www.instagram.com/bcgk_property/",
+    "https://www.youtube.com/@bcgkproperty",
+    "https://www.linkedin.com/company/bcgkproperty",
+    "https://www.tiktok.com/@bcgkproperty"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  /* =========================================================
+     HOME 2 — experimental concept layout, scoped under hs2-*
+     so nothing here touches the shared design system.
+     ========================================================= */
+  body.hs2-page { background: #000; color: #fff; }
+  .hs2-page .site-header { background: rgba(0,0,0,0.85); }
+
+  .hs2-section { position: relative; padding: 120px 0; overflow: hidden; }
+  .hs2-section--tight { padding: 70px 0; }
+  .hs2-wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 3; }
+  .hs2-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.72rem;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-500);
+    margin-bottom: 22px;
+  }
+  .hs2-eyebrow::before { content:""; width: 22px; height: 1px; background: var(--gold-500); display:inline-block; }
+
+  /* ---------- Hero ---------- */
+  .hs2-hero {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 160px 0 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hs2-mesh {
+    position: absolute; inset: -25%;
+    background:
+      radial-gradient(circle at 22% 28%, rgba(198,161,91,0.20), transparent 42%),
+      radial-gradient(circle at 78% 68%, rgba(198,161,91,0.14), transparent 46%),
+      radial-gradient(circle at 50% 105%, rgba(255,255,255,0.05), transparent 55%);
+    filter: blur(60px);
+    animation: hs2-drift 22s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+  @keyframes hs2-drift {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(-4%,3%) scale(1.1); }
+  }
+  .hs2-grain {
+    position: absolute; inset: 0; z-index: 2; opacity: 0.05; pointer-events: none;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Giant ring behind the H1 — the ring itself matches the page background
+     (invisible on its own). A thick gold stroke of light with a heavy soft
+     feather sweeps around its edge: it follows the cursor when the visitor
+     moves their mouse over the hero, and drifts clockwise on its own the
+     rest of the time. Sized to spill past the section's top/bottom edge on
+     purpose — it's cropped by the hero's overflow, which is intentional. */
+  .hs2-ring-wrap {
+    position: absolute; top: 48%; left: 50%;
+    width: min(1180px, 96vw); height: min(1180px, 96vw);
+    transform: translate(-50%, -50%);
+    z-index: 1; pointer-events: none;
+  }
+  .hs2-ring-base {
+    position: absolute; inset: 0; border-radius: 50%;
+    border: 1.5px solid #000;
+    background: #000;
+  }
+  .hs2-ring-glow {
+    position: absolute; inset: 0; border-radius: 50%;
+    --ring-angle: 0deg;
+    background: conic-gradient(from var(--ring-angle, 0deg),
+      transparent 0deg,
+      transparent 296deg,
+      rgba(198,161,91,0.85) 336deg,
+      rgba(243,230,200,1) 352deg,
+      rgba(198,161,91,0.85) 360deg);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 10px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 10px));
+  }
+  .hs2-ring-glow::after {
+    content: ""; position: absolute; inset: -90px; border-radius: 50%;
+    background: conic-gradient(from var(--ring-angle, 0deg), transparent 292deg, rgba(198,161,91,0.75) 352deg, transparent 412deg);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 210px), #000 calc(100% - 210px), #000 calc(100% - 88px), transparent calc(100% - 88px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 210px), #000 calc(100% - 210px), #000 calc(100% - 88px), transparent calc(100% - 88px));
+    filter: blur(46px);
+  }
+  @media (max-width: 700px) {
+    .hs2-hero { padding: 96px 0 0; min-height: 0; }
+    .hs2-ring-wrap { width: 118vw; height: 118vw; top: 34%; }
+  }
+  .hs2-h1 {
+    position: relative; z-index: 2;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.6rem, 8vw, 6.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 1080px;
+    margin: 0 auto 26px;
+  }
+  .hs2-h1 .accent {
+    background: linear-gradient(100deg, var(--cta-gold), #f3e6c8, var(--cta-gold));
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: hs2-shimmer 7s linear infinite;
+  }
+  @keyframes hs2-shimmer { to { background-position: 200% center; } }
+  .hs2-sub {
+    position: relative; z-index: 2;
+    max-width: 620px; margin: 0 auto 44px;
+    font-size: 1.1rem; color: rgba(255,255,255,0.68); line-height: 1.6;
+  }
+  .hs2-cta-row { position: relative; z-index: 2; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-bottom: 70px; }
+  .hs2-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 18px 34px; border-radius: 999px; font-weight: 700; font-size: 0.98rem;
+    text-decoration: none; cursor: pointer; transition: box-shadow 0.3s ease, background 0.3s ease;
+    will-change: transform; white-space: nowrap;
+  }
+  .hs2-btn--solid { background: var(--cta-gold); color: var(--cta-gold-text); }
+  .hs2-btn--solid:hover { box-shadow: 0 12px 34px rgba(198,161,91,0.35); }
+  .hs2-btn--ghost { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); color: #fff; }
+  .hs2-btn--ghost:hover { background: rgba(255,255,255,0.12); }
+  @media (max-width: 480px) {
+    .hs2-btn { padding: 15px 20px; font-size: 0.84rem; gap: 6px; }
+  }
+  @media (max-width: 360px) {
+    .hs2-btn { padding: 13px 14px; font-size: 0.74rem; }
+  }
+
+  /* ---------- Ticker ---------- */
+  .hs2-ticker {
+    position: relative; z-index: 2;
+    overflow: hidden; white-space: nowrap;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 20px 0;
+    background: rgba(255,255,255,0.02);
+  }
+  .hs2-ticker-track { display: inline-flex; gap: 48px; animation: hs2-marquee 26s linear infinite; }
+  .hs2-ticker:hover .hs2-ticker-track { animation-play-state: paused; }
+  .hs2-ticker-track span {
+    font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 1rem;
+    color: rgba(255,255,255,0.55); letter-spacing: 0.03em;
+  }
+  .hs2-ticker-track span.gold { color: var(--gold-500); }
+  @keyframes hs2-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Bento grid ---------- */
+  .hs2-bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    gap: 18px;
+  }
+  .hs2-bento-card {
+    grid-column: span 2; grid-row: span 1;
+    background: linear-gradient(150deg, var(--navy-800), var(--navy-900));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    padding: 30px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    position: relative; overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+  .hs2-bento-card:hover { border-color: rgba(198,161,91,0.45); box-shadow: 0 20px 50px rgba(0,0,0,0.45); }
+  .hs2-bento-card.big { grid-column: span 2; grid-row: span 2; justify-content: center; }
+  .hs2-bento-card .tag {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold-400); margin-bottom: 10px;
+  }
+  .hs2-bento-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 600; color: #fff; margin: 0 0 8px; }
+  .hs2-bento-card.big h3 { font-size: clamp(2.2rem, 3.4vw, 3rem); font-weight: 700; margin-bottom: 12px; }
+  .hs2-bento-card p { color: rgba(255,255,255,0.6); font-size: 0.92rem; margin: 0; line-height: 1.5; }
+  .hs2-bento-card .num { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 2.6rem; color: var(--gold-500); line-height: 1; margin-bottom: 6px; }
+  @media (max-width: 900px) {
+    /* Fixed-height grid rows (sized for desktop's 2-line copy) clip taller
+       wrapped text once cards stack full-width on phones/tablets — switch
+       to content-driven height instead of a fixed row size. */
+    .hs2-bento { grid-template-columns: 1fr; grid-auto-rows: auto; }
+    .hs2-bento-card, .hs2-bento-card.big { grid-column: span 1; grid-row: auto; min-height: 150px; }
+  }
+
+  /* ---------- Counters ---------- */
+  .hs2-counters { display: flex; justify-content: center; gap: 90px; flex-wrap: wrap; text-align: center; }
+  @media (max-width: 700px) { .hs2-counters { gap: 40px 60px; } }
+  @media (max-width: 460px) { .hs2-counters { gap: 30px 40px; } }
+  .hs2-counter .val {
+    font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    background: linear-gradient(100deg, var(--gold-500), #f3e6c8, var(--gold-500));
+    background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent;
+    white-space: nowrap;
+  }
+  .hs2-counter .lbl { margin-top: 8px; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+
+  /* ---------- Framework rail ---------- */
+  .hs2-rail {
+    display: flex; gap: 24px; overflow-x: auto; padding: 10px 4px 26px;
+    scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+  }
+  .hs2-rail::-webkit-scrollbar { height: 6px; }
+  .hs2-rail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 999px; }
+  .hs2-rail-card {
+    scroll-snap-align: start;
+    flex: 0 0 min(340px, 82vw);
+    background: var(--navy-800);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    padding: 40px 34px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .hs2-rail-card:hover { transform: translateY(-6px); border-color: rgba(198,161,91,0.4); }
+  .hs2-rail-card .letter {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    color: var(--gold-500); margin-bottom: 18px;
+  }
+  .hs2-rail-card .letter svg { width: 100%; height: 100%; }
+  .hs2-rail-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; margin: 0 0 12px; color: #fff; }
+  .hs2-rail-card p { color: rgba(255,255,255,0.62); margin: 0; line-height: 1.55; }
+
+  /* ---------- Testimonial marquee ---------- */
+  .hs2-quote-track { display: inline-flex; gap: 24px; animation: hs2-marquee 40s linear infinite; animation-play-state: paused; }
+  .hs2-quotes.hs2-marquee-active .hs2-quote-track { animation-play-state: running; }
+  .hs2-quotes:hover .hs2-quote-track { animation-play-state: paused; }
+  .hs2-quotes { overflow: hidden; }
+  .hs2-quote-card {
+    flex: 0 0 380px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 28px 30px;
+  }
+  @media (max-width: 480px) {
+    .hs2-quote-card { flex-basis: min(320px, 84vw); padding: 22px 22px; }
+  }
+  .hs2-quote-card .stars { color: var(--gold-500); letter-spacing: 2px; margin-bottom: 12px; }
+  .hs2-quote-card p.q { color: rgba(255,255,255,0.85); font-size: 1rem; margin: 0 0 14px; font-family: 'Space Grotesk', sans-serif; font-weight: 500; }
+  .hs2-quote-card .attr { color: rgba(255,255,255,0.45); font-size: 0.85rem; }
+
+  /* ---------- Closing CTA ---------- */
+  .hs2-closer { text-align: center; }
+  .hs2-closer h2 {
+    font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem); letter-spacing: -0.02em; line-height: 1.03;
+    max-width: 780px; margin: 0 auto 22px;
+  }
+  .hs2-closer p { max-width: 520px; margin: 0 auto 40px; color: rgba(255,255,255,0.62); }
+  .hs2-glow-btn {
+    position: relative; display: inline-flex; padding: 3px; border-radius: 999px;
+    background: linear-gradient(120deg, var(--cta-gold), rgba(255,255,255,0.2), var(--cta-gold));
+    background-size: 220% auto;
+    animation: hs2-shimmer 5s linear infinite;
+  }
+  .hs2-glow-btn a {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #000; color: #fff; padding: 18px 40px; border-radius: 999px;
+    font-weight: 700; font-size: 1rem; text-decoration: none; white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .hs2-glow-btn a { padding: 15px 22px; font-size: 0.85rem; gap: 6px; }
+  }
+  @media (max-width: 360px) {
+    .hs2-glow-btn a { padding: 13px 16px; font-size: 0.76rem; }
+  }
+
+  /* ---------- Reveal ---------- */
+  .hs2-reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .hs2-reveal.hs2-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .hs2-reveal { opacity: 1; transform: none; transition: none; }
+    .hs2-mesh, .hs2-h1 .accent, .hs2-ticker-track, .hs2-quote-track, .hs2-glow-btn { animation: none; }
+  }
+</style>
+</head>
+<body class="hs2-page">
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/bcgk-logo.png" alt="BCGK" /><span class="divider">·</span><span>HIGH STAKES DEALS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="inner-circle.html">Inner Circle Program</a>
+      <a href="join-webinar.html">Join Webinar</a>
+      <a href="join-webinar.html" class="btn btn-primary nav-mobile-cta">Join Webinar</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="join-webinar.html" class="btn btn-primary">Join Webinar</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hs2-hero">
+  <div class="hs2-mesh"></div>
+  <div class="hs2-grain"></div>
+  <div class="hs2-ring-wrap" aria-hidden="true">
+    <div class="hs2-ring-base"></div>
+    <div class="hs2-ring-glow"></div>
+  </div>
+  <div class="hs2-wrap">
+    <span class="hs2-eyebrow">Founding Spots Open Now</span>
+    <h1 class="hs2-h1">Beyonce</h1>
+    <p class="hs2-sub">A private multifamily mastermind and real estate coaching program for real estate professionals scaling past 50 doors — sourcing, underwriting, financing, and raising capital, taught A to Z by the team that's actually done it.</p>
+    <div class="hs2-cta-row">
+      <div class="hs2-glow-btn">
+        <a href="join-webinar.html" class="hs2-magnetic">JOIN FREE WEBINAR! →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hs2-ticker">
+    <div class="hs2-ticker-track" id="hs2-ticker-track">
+      <span>250+ DOORS OWNED</span><span class="gold">★</span>
+      <span>~$45–50M PORTFOLIO VALUE</span><span class="gold">★</span>
+      <span>THE SCORE FRAMEWORK</span><span class="gold">★</span>
+      <span>FOUNDED 2020</span><span class="gold">★</span>
+      <span>FOUNDING SPOTS OPEN</span><span class="gold">★</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENTO GRID ============ -->
+<section class="hs2-section">
+  <div class="hs2-wrap">
+    <span class="hs2-eyebrow hs2-reveal">Why Operators Choose This Room</span>
+    <h2 class="hs2-reveal" style="font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); letter-spacing:-0.02em; max-width:640px; margin-bottom:50px;">Everything you need to scale — nothing you don't.</h2>
+
+    <div class="hs2-bento">
+      <div class="hs2-bento-card big hs2-tilt hs2-reveal">
+        <div class="tag">The Framework</div>
+        <h3>SCORE</h3>
+        <p>Score, Scale, Spotlight — the entire curriculum in three pillars. No fluff, no filler modules.</p>
+      </div>
+      <div class="hs2-bento-card hs2-tilt hs2-reveal">
+        <div class="num">250+</div>
+        <h3 style="font-size:1.1rem;">Doors Owned</h3>
+        <p>By the founders in the room — every call.</p>
+      </div>
+      <div class="hs2-bento-card hs2-tilt hs2-reveal">
+        <div class="tag">Live Access</div>
+        <h3>2x Weekly Calls</h3>
+        <p>Direct access to the founding team, not a recorded course.</p>
+      </div>
+      <div class="hs2-bento-card hs2-tilt hs2-reveal">
+        <div class="num">2020</div>
+        <h3 style="font-size:1.1rem;">Founded</h3>
+        <p>Built from one triplex to a real portfolio.</p>
+      </div>
+      <div class="hs2-bento-card hs2-tilt hs2-reveal">
+        <div class="tag">Capital</div>
+        <h3>LP Connections</h3>
+        <p>Warm capital-raising relationships that actually convert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTERS ============ -->
+<section class="hs2-section hs2-section--tight" style="background:rgba(255,255,255,0.02); border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06);">
+  <div class="hs2-wrap">
+    <div class="hs2-counters">
+      <div class="hs2-counter hs2-reveal">
+        <div class="val" data-count="250" data-suffix="+">0</div>
+        <div class="lbl">Doors Owned</div>
+      </div>
+      <div class="hs2-counter hs2-reveal">
+        <div class="val" data-count="45" data-prefix="~$" data-suffix="–50M">0</div>
+        <div class="lbl">Portfolio Value</div>
+      </div>
+      <div class="hs2-counter hs2-reveal">
+        <div class="val" data-count="2020">0</div>
+        <div class="lbl">Founded</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCORE RAIL ============ -->
+<section class="hs2-section">
+  <div class="hs2-wrap">
+    <span class="hs2-eyebrow hs2-reveal">The Curriculum</span>
+    <h2 class="hs2-reveal" style="font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); letter-spacing:-0.02em; max-width:640px; margin-bottom:40px;">Three pillars. Nothing else.</h2>
+  </div>
+  <div class="hs2-wrap">
+    <div class="hs2-rail hs2-reveal">
+      <div class="hs2-rail-card">
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <circle cx="12" cy="12" r="5"></circle>
+            <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </div>
+        <h3>Score</h3>
+        <p>The technical mastery. Find, underwrite, finance, fund, and operate multifamily assets at a high level — no guesswork on your next deal.</p>
+      </div>
+      <div class="hs2-rail-card">
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 17l5.5-5.5 4 4L21 7"></path>
+            <path d="M15 7h6v6"></path>
+          </svg>
+        </div>
+        <h3>Scale</h3>
+        <p>The strategic mindset. Stop thinking in duplexes. Move up-market, think bigger, and build a real portfolio with a real exit strategy.</p>
+      </div>
+      <div class="hs2-rail-card">
+        <div class="letter" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 10.5v3a1.8 1.8 0 001.8 1.8h.9l2.8 3.7V5l-2.8 3.7h-.9A1.8 1.8 0 003 10.5z"></path>
+            <path d="M14.5 8.8a3.2 3.2 0 010 6.4M17.3 5.7a7.2 7.2 0 010 12.6"></path>
+          </svg>
+        </div>
+        <h3>Spotlight</h3>
+        <p>The brand &amp; network game. Be known. Build the social presence, CRM, and events network that make deals come to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL MARQUEE ============ -->
+<section class="hs2-section hs2-section--tight">
+  <div class="hs2-wrap">
+    <span class="hs2-eyebrow hs2-reveal">The Room Does the Work</span>
+    <h2 class="hs2-reveal" style="font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); letter-spacing:-0.02em; max-width:640px; margin-bottom:40px;">Real operators. Real acceleration.</h2>
+  </div>
+  <div class="hs2-quotes hs2-reveal">
+    <div class="hs2-quote-track">
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"An 8-year plan turned into 9 months."</p><div class="attr">— Anthony, Inner Circle Member</div></div>
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"Under contract within months."</p><div class="attr">— Shane, Inner Circle Member</div></div>
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"They didn't accelerate it — they enabled it."</p><div class="attr">— Gideon, Inner Circle Member</div></div>
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"An 8-year plan turned into 9 months."</p><div class="attr">— Anthony, Inner Circle Member</div></div>
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"Under contract within months."</p><div class="attr">— Shane, Inner Circle Member</div></div>
+      <div class="hs2-quote-card"><div class="stars">★★★★★</div><p class="q">"They didn't accelerate it — they enabled it."</p><div class="attr">— Gideon, Inner Circle Member</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSER ============ -->
+<section class="hs2-section hs2-closer">
+  <div class="hs2-mesh" style="opacity:0.6;"></div>
+  <div class="hs2-wrap">
+    <span class="hs2-eyebrow hs2-reveal" style="justify-content:center;">Founding Spots Are Limited</span>
+    <h2 class="hs2-reveal">Ready to play high stakes?</h2>
+    <p class="hs2-reveal">Step into a room of operators who are actually closing deals — not just talking about it.</p>
+    <div class="hs2-glow-btn hs2-reveal">
+      <a href="inner-circle.html" class="hs2-magnetic">Apply to the Inner Circle →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/img/bcgk-logo.png" alt="BCGK" style="height:26px;width:auto;" /><span>· HIGH STAKES DEALS</span></div>
+        <p>Join The Inner Circle Program where you'll learn the fundamentals to scaling your multifamily real estate portfolio.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="inner-circle.html">Inner Circle Program</a></li>
+          <li><a href="join-webinar.html">Join Webinar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-row">
+          <a href="https://www.instagram.com/bcgk_property/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://www.youtube.com/@bcgkproperty" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          <a href="https://www.linkedin.com/company/bcgkproperty" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.tiktok.com/@bcgkproperty" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BCGK High Stakes Deals. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script>
+  (function () {
+    "use strict";
+
+    // ---------- Scroll reveal ----------
+    var revealEls = document.querySelectorAll(".hs2-reveal");
+    if (revealEls.length) {
+      if ("IntersectionObserver" in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("hs2-visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+        revealEls.forEach(function (el) { obs.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add("hs2-visible"); });
+      }
+    }
+
+    // ---------- Testimonial marquee: hold on the first card until the
+    // section has actually scrolled into view, then start the auto-scroll —
+    // so visitors always see card #1 in full before it begins moving. ----------
+    var quotesEl = document.querySelector(".hs2-quotes");
+    if (quotesEl) {
+      if ("IntersectionObserver" in window) {
+        var quotesObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              quotesObs.unobserve(entry.target);
+              setTimeout(function () {
+                entry.target.classList.add("hs2-marquee-active");
+              }, 700);
+            }
+          });
+        }, { threshold: 0.4 });
+        quotesObs.observe(quotesEl);
+      } else {
+        quotesEl.classList.add("hs2-marquee-active");
+      }
+    }
+
+    // ---------- Bento tilt ----------
+    document.querySelectorAll(".hs2-tilt").forEach(function (card) {
+      card.addEventListener("mousemove", function (e) {
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = "perspective(700px) rotateX(" + (py * -6).toFixed(2) + "deg) rotateY(" + (px * 8).toFixed(2) + "deg) translateY(-2px)";
+      });
+      card.addEventListener("mouseleave", function () {
+        card.style.transform = "";
+        card.style.transition = "transform 0.5s ease";
+        setTimeout(function () { card.style.transition = ""; }, 500);
+      });
+    });
+
+    // ---------- Count-up stats ----------
+    var counters = document.querySelectorAll(".hs2-counter .val");
+    if (counters.length && "IntersectionObserver" in window) {
+      var counterObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target;
+          counterObs.unobserve(el);
+          var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+          var prefix = el.getAttribute("data-prefix") || "";
+          var suffix = el.getAttribute("data-suffix") || "";
+          var duration = 1400;
+          var start = null;
+          function step(ts) {
+            if (!start) start = ts;
+            var progress = Math.min((ts - start) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.round(target * eased);
+            el.textContent = prefix + current + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(function (el) { counterObs.observe(el); });
+    }
+
+    // ---------- Ring light: follows cursor, drifts clockwise when idle ----------
+    var ringHero = document.querySelector(".hs2-hero");
+    var ringWrap = document.querySelector(".hs2-ring-wrap");
+    var ringGlow = document.querySelector(".hs2-ring-glow");
+    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (ringHero && ringWrap && ringGlow && !prefersReducedMotion) {
+      var currentAngle = 0;      // degrees, 0 = top, increases clockwise (matches conic-gradient "from" angle)
+      var targetAngle = null;    // cursor-derived target angle, null when not actively following
+      var lastMoveAt = 0;        // timestamp of the last mousemove over the hero
+      var lastTick = null;
+      var IDLE_MS = 900;         // how long to wait after the cursor stops before resuming auto-rotate
+      var IDLE_DEG_PER_MS = 360 / 22000; // clockwise drift speed when idle (~22s per revolution)
+      var CHASE_MS = 260;        // how quickly the light "catches up" to the cursor
+
+      ringHero.addEventListener("mousemove", function (e) {
+        var rect = ringWrap.getBoundingClientRect();
+        var cx = rect.left + rect.width / 2;
+        var cy = rect.top + rect.height / 2;
+        var dx = e.clientX - cx;
+        var dy = e.clientY - cy;
+        var bearing = Math.atan2(dx, -dy) * (180 / Math.PI);
+        if (bearing < 0) bearing += 360;
+        targetAngle = bearing;
+        lastMoveAt = performance.now();
+      });
+      ringHero.addEventListener("mouseleave", function () {
+        targetAngle = null;
+      });
+
+      function tick(ts) {
+        if (lastTick === null) lastTick = ts;
+        var dt = ts - lastTick;
+        lastTick = ts;
+
+        var following = targetAngle !== null && (performance.now() - lastMoveAt) < IDLE_MS;
+        if (following) {
+          var diff = ((targetAngle - currentAngle + 540) % 360) - 180;
+          currentAngle += diff * Math.min(1, dt / CHASE_MS);
+        } else {
+          currentAngle += IDLE_DEG_PER_MS * dt;
+        }
+        currentAngle = ((currentAngle % 360) + 360) % 360;
+        ringGlow.style.setProperty("--ring-angle", currentAngle.toFixed(2) + "deg");
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+  })();
+</script>
+</body>
+</html>
